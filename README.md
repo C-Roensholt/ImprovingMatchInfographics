@@ -5,7 +5,7 @@ This will be done by adding more context like win, loss and draw probabilities, 
 
 - `probability_functions.py` contains functions for calculating win, loss and draw probabilities, scoreline probabilities and probabilities for 0-10 goals for each team
 - `xG_Infographic.ipynb` contains loading and preperation of the data, and also the code for the visualizations of the seperate parts and the complete "improved" xG Infographic
-- `pics` contains all the visualizations
+- `output` contains all the visualizations
 
 ### Win, loss, and draw probabilities
 
