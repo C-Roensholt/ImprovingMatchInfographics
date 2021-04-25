@@ -30,7 +30,7 @@ def score_probability(home_xG, away_xG, num_goals=10):
     score_probs = [[(x[0], y[0]), x[1]*y[1]] for x in home_goals_dist for y in away_goals_dist]
     score_probs.sort(key=lambda x: x[1], reverse=True)
     
-    return score_probs
+    return home_goals_dist, away_goals_dist, score_probs
 
 
 # Calculate scoreline probabilities
