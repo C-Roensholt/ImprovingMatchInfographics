@@ -9,6 +9,8 @@ This will be done by adding more context like win, loss and draw probabilities, 
 
 ### Win, loss, and draw probabilities
 
+![alt text](output/win_probability_viz.png)
+
 ### Scoreline probabilities
 
 ### Goals probabilities for each team
