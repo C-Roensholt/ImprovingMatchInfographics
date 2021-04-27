@@ -8,8 +8,7 @@ This will be done by adding more context like win, loss and draw probabilities, 
 - `output` contains all the visualizations
 
 ### Win, loss, and draw probabilities
-
-![alt text](output/win_probability_viz.png)
+<img src="output/win_probability_viz.png" width="200" height="200" />
 
 ### Scoreline probabilities
 
