@@ -7,10 +7,27 @@ This will be done by adding more context like win, loss and draw probabilities, 
 - `xG_Infographic.ipynb` contains loading and preperation of the data, and also the code for the visualizations of the seperate parts and the complete "improved" xG Infographic
 - `output` contains all the visualizations
 
-### Goal probabilities for each team
+## xG infographic breakdown
+- **xG racechart**
 
-### Win probability
-<img src="output/win_probability_viz.png" width="400" height="125" />
+<img align="right" src="output/Leeds_vs_Liverpool_xG_racechart_gw32.png" width="300" height="200" />
 
-### Scoreline probability
+<br clear="right"/>
+
+- **Goal probabilities for each team**
+
+Bar chart of 0-9 goals for each team, where the actual goal(s) scored is filled.
+
+<img align="right" src="output/goal_probabilities_viz.png" width="225" height="300" />
+
+<br clear="right"/>
+
+- **Win probability**
+
+<img align="right" src="output/win_probability_viz.png" width="500" height="125" />
+
+<br clear="right"/>
+
+- **Scoreline probability**
+
 
