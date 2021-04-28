@@ -10,24 +10,15 @@ This will be done by adding more context like win, loss and draw probabilities, 
 ## xG infographic breakdown
 - **xG racechart**
 
-<img align="right" src="output/Leeds_vs_Liverpool_xG_racechart_gw32.png" width="300" height="200" />
-
-<br clear="right"/>
+<img src="output/Leeds_vs_Liverpool_xG_racechart_gw32.png" width="300" height="200" />
 
 - **Goal probabilities for each team**
 
 Bar chart of 0-9 goals for each team, where the actual goal(s) scored is filled.
 
-<img align="right" src="output/goal_probabilities_viz.png" width="225" height="300" />
-
-<br clear="right"/>
+<img src="output/goal_probabilities_viz.png" width="225" height="300" />
 
 - **Win probability**
 
-<img align="right" src="output/win_probability_viz.png" width="500" height="125" />
-
-<br clear="right"/>
-
-- **Scoreline probability**
-
+<img src="output/win_probability_viz.png" width="500" height="125" />
 
