@@ -7,9 +7,10 @@ This will be done by adding more context like win, loss and draw probabilities, 
 - `xG_Infographic.ipynb` contains loading and preperation of the data, and also the code for the visualizations of the seperate parts and the complete "improved" xG Infographic
 - `output` contains all the visualizations
 
-### Win, loss, and draw probabilities
+### Goal probabilities for each team
 
-### Scoreline probabilities
+### Win probability
+<img src="output/win_probability_viz.png" width="400" height="125" />
 
-### Goals probabilities for each team
+### Scoreline probability
 
