@@ -15,7 +15,7 @@ This will be done by adding more context like win, loss and draw probabilities, 
 
 ## xG Infographic
 
-<img src="output/Leeds_vs_Liverpool_xG_infographic_gw32.png" width="300" height="200" />
+<img src="output/Leeds_vs_Liverpool_xG_Infographic_gw32.png" width="700" height="500" />
 
 ## xG infographic breakdown
 - **xG racechart**
