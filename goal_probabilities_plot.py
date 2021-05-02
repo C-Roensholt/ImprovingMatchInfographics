@@ -42,6 +42,10 @@ home_goal_probs, away_goal_probs, scoreline_probs = pf.score_probability(float(h
 home_xs, home_ys = zip(*home_goal_probs)
 away_xs, away_ys = zip(*away_goal_probs)
 
+# Get percentages
+home_ys = [i*100 for i in home_ys]
+away_ys = [i*100 for i in away_ys]
+
 #get number of goals for each team
 home_goals = len(df_home[df_home['result'] == 'Goal'])
 away_goals = len(df_away[df_away['result'] == 'Goal'])
@@ -51,7 +55,7 @@ away_color = home_colors[away_team]
 
 
 # --------------- Create plot ------------------- #
-fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1, figsize = (6,9))
+fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1, figsize = (4,7))
 fig.set_facecolor(facecolor)
 ax1.set_facecolor(facecolor)
 ax2.set_facecolor(facecolor)
@@ -75,11 +79,18 @@ ax1.tick_params(axis='both', which='both', left=False, bottom=False)
 ax1.set_frame_on(False)
 
 # Set labels and text
-ax1.set_xlabel('Mål',
+ax1.set_xlabel('Antal Mål',
                color='w', fontweight='bold', size=14)
-ax1.set_ylabel('Sandsynlighed',
+ax1.set_ylabel('Sandsynlighed i procent',
                color='w', fontweight='bold', size=14)
 
+# Annotate probabilities on the bars
+for i, value in enumerate(home_ys):
+        if value >= 1:
+                ax1.text(i, value+0.5, f'{int(value)}%',
+                         color='white', ha="center", fontweight='bold', fontsize=12, zorder=15)
+
+# Add title
 fig_text(s=f'<{home_team}>', x=0.85, y=0.8,
         highlight_colors=[home_color], highlight_weights=['bold'], fontsize=26, fontweight='bold', ha='right')
 
@@ -102,10 +113,16 @@ ax2.tick_params(axis='both', which='both', left=False, bottom=False)
 ax2.set_frame_on(False)
 
 # Set labels and text
-ax2.set_xlabel('Mål',
+ax2.set_xlabel('Antal Mål',
                color='w', fontweight='bold', size=14)
-ax2.set_ylabel('Sandsynlighed',
+ax2.set_ylabel('Sandsynlighed i procent',
                color='w', fontweight='bold', size=14)
+
+# Annotate probabilities on the bars
+for i, value in enumerate(away_ys):
+        if value >= 1:
+                ax2.text(i, value+0.5, f'{int(value)}%',
+                         color='white', ha="center", fontweight='bold', fontsize=12, zorder=15)
 
 # Add team names
 fig_text(s=f'<{away_team}>', x=0.85, y=0.4,
