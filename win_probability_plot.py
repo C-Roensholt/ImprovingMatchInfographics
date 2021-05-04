@@ -99,6 +99,14 @@ ax.text(x=home_prob+draw_prob+away_prob/2, y=0.6, s=f'{away_prob}%',
         color='w', ha='center', size=16, fontweight='bold')
 ax.text(x=home_prob+draw_prob+away_prob/2, y=0.40, s=f'Sejr',
         color='w', ha='center', size=12)
+# Home
+ax.text(x=home_prob/2, y=0.99,
+        s=f'{home_team}',
+        color=home_color, ha='center', size=16, fontweight='bold')
+
+ax.text(x=home_prob+draw_prob+away_prob/2, y=0.99,
+        s=f'{away_team}',
+        color=away_color, ha='center', size=16, fontweight='bold')
 
 #plt.savefig('output/win_probability_viz.png',
 #            dpi=600, bbox_inches='tight')
