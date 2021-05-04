@@ -103,7 +103,7 @@ ax.text(x=home_prob+draw_prob+away_prob/2, y=0.99,
         s=f'{away_team}',
         color=away_color, ha='center', size=20, fontweight='bold')
 
-plt.savefig('output/win_probability_viz.png',
-            dpi=600, bbox_inches='tight')
+#plt.savefig('output/win_probability_viz.png',
+#            dpi=600, bbox_inches='tight')
 
 plt.show()
