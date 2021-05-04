@@ -75,40 +75,35 @@ ax.spines["left"].set_visible(False)
 
 # Plot bars
 home = ax.barh(0.5, home_away_draw_probs['probs'][0], edgecolor=home_color,
-               fill=False, linewidth=3, height=0.8)
+               fill=True, facecolor=home_color,
+               linewidth=3, height=0.8)
 draw = ax.barh(0.5, home_away_draw_probs['probs'][1],
                left=home_away_draw_probs['probs'][0], edgecolor=text_color,
-               fill=False, linewidth=3, height=0.8)
+               facecolor=text_color, fill=True, linewidth=3, height=0.8)
 away = ax.barh(0.5, home_away_draw_probs['probs'][2],
                left=home_away_draw_probs['probs'][0]+home_away_draw_probs['probs'][1], edgecolor=away_color,
-               fill=False, linewidth=3, height=0.8)
+               facecolor=away_color, fill=True, linewidth=3, height=0.8)
 
 # Set texts
 # Home
-ax.text(x=home_prob/2, y=0.6, s=f'{home_prob}%',
-        color='w', ha='center', size=16, fontweight='bold')
-ax.text(x=home_prob/2, y=0.40, s=f'Sejr',
-        color='w', ha='center', size=12)
+ax.text(x=home_prob/2, y=0.5, s=f'{home_prob}%',
+        color='k', ha='center', size=20, fontweight='bold')
 # Draw
-ax.text(x=home_prob+draw_prob/2, y=0.6, s=f'{draw_prob}%',
-        color='w', ha='center', size=16, fontweight='bold')
-ax.text(x=home_prob+draw_prob/2, y=0.40, s=f'Uafgjort',
-        color='w', ha='center', size=12)
+ax.text(x=home_prob+draw_prob/2, y=0.5, s=f'{draw_prob}%',
+        color='k', ha='center', size=20, fontweight='bold')
 # Away
-ax.text(x=home_prob+draw_prob+away_prob/2, y=0.6, s=f'{away_prob}%',
-        color='w', ha='center', size=16, fontweight='bold')
-ax.text(x=home_prob+draw_prob+away_prob/2, y=0.40, s=f'Sejr',
-        color='w', ha='center', size=12)
+ax.text(x=home_prob+draw_prob+away_prob/2, y=0.5, s=f'{away_prob}%',
+        color='k', ha='center', size=20, fontweight='bold')
 # Home
 ax.text(x=home_prob/2, y=0.99,
         s=f'{home_team}',
-        color=home_color, ha='center', size=16, fontweight='bold')
+        color=home_color, ha='center', size=20, fontweight='bold')
 
 ax.text(x=home_prob+draw_prob+away_prob/2, y=0.99,
         s=f'{away_team}',
-        color=away_color, ha='center', size=16, fontweight='bold')
+        color=away_color, ha='center', size=20, fontweight='bold')
 
-#plt.savefig('output/win_probability_viz.png',
-#            dpi=600, bbox_inches='tight')
+plt.savefig('output/win_probability_viz.png',
+            dpi=600, bbox_inches='tight')
 
 plt.show()
