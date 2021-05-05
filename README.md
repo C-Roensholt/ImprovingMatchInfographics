@@ -1,12 +1,13 @@
 # Improving Match xG Infographics
 
-In this project I will make my attempt to improve the common used Expected Goals (xG) race chart from a single game.
+The repository consists of the code used in my blog post about the poisson distribution of Expected Goals in single football matches.
+
+http://roensholt-stats.com/2021-04-25-Hvorfor-expected-goals-ikke-fort%C3%A6ller-resultatet-af-en-kamp/
+
+This project I will make my attempt to improve the common used Expected Goals (xG) race chart from a single game.
 This will be done by adding more context like win, loss and draw probabilities, the 3 most probable scorelines and the probability for goals for each team.
 
 - `utils` folder
-  - `probability_functions.py` functions for calculating win and draw probabilities, scoreline probabilities and probabilities for 0-9 goals for each team
-  - `cleaning.py`
-  - `metadata.py`
 - `xG_Infographic.ipynb` code for the complete xG Infographic
 - `goal_probabilities_plot.py`
 - `win_probability_plot.py`
